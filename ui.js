@@ -1,9 +1,11 @@
+//UI
+
 class UI {
     constructor() {
-this.location = document.getElementById('w-location');
+        this.location = document.getElementById('w-location');
         this.desc = document.getElementById('w-desc');
         this.string = document.getElementById('w-string');
-       // this.details = document.getElementById('w-details');
+        // this.details = document.getElementById('w-details');
         this.icon = document.getElementById('w-icon');
         this.humidity = document.getElementById('w-humidity');
         this.wind = document.getElementById('w-wind');
@@ -13,8 +15,7 @@ this.location = document.getElementById('w-location');
 
     }
 
-
-
+    //paint ui with results
     paint(weather) {
         const tempC = (weather.main.temp - 273.15).toFixed(0);
         const feelsLike = (weather.main.feels_like - 273.15).toFixed(0);

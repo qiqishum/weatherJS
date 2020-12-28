@@ -1,3 +1,5 @@
+//local storage
+
 class Storage {
     constructor() {
         this.city;
